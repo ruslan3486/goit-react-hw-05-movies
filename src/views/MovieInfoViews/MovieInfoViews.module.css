@@ -1,0 +1,47 @@
+.Containerlink {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.link {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(157, 184, 184);
+  width: 65px;
+  border-radius: 15px;
+  color: rgb(25, 3, 66);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activeLink {
+  background-color: #cc4ab6;
+}
+.ContainerMovie {
+  display: flex;
+  padding: 10px 20px;
+}
+.ContainerInfo {
+  width: 500px;
+}
+.ContainerButton {
+  background-color: rgb(155, 155, 190);
+  color: rgb(6, 79, 6);
+  border-radius: 25px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ContainerButton:hover {
+  background-color: rgb(72, 121, 29);
+}
+.ContainerImg {
+  margin-right: 30px;
+}
