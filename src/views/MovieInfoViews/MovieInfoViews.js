@@ -45,7 +45,8 @@ function MovieInfoView() {
     return `https://image.tmdb.org/t/p/w${size}`;
   };
   const onGoBack = () => {
-    history.push(location?.state?.from || routes.home);
+    locState ? history.push(locState) : history.push("/");
+    // history.push(location?.state?.from ?? routes.home);
     // locState ? history.push(locState) : history.push('/')
     // history.push(location?.state?.from?.location?? '/credits')
   };

@@ -16,7 +16,7 @@ function MoviesPage() {
     searchQuery &&
       ApiServiese.fetchMoviesSearch(searchQuery).then((data) => {
         setSearchData(data.results);
-        history.push({ ...location, search: "" });
+        data.results.length === 0 && history.push({ ...location, search: "" });
       });
   }, [history, location, searchQuery]);
 
